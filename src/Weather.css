@@ -21,6 +21,7 @@
   line-height: 19px;
   list-style-type: none;
 }
+
 .Weather canvas {
   height: 64px;
   width: 64px;
@@ -39,6 +40,8 @@
   font-weight: 400;
   position: relative;
   top: -34px;
-
   line-height: 1;
+}
+.Weather .units a {
+  text-decoration: none;
 }

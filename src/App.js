@@ -8,7 +8,7 @@ export default function App() {
         <Weather defaultCity="Tehran" />
         <footer>
           This project was coded by{" "}
-          <a href="http://mahsair.ir" href="_blank">
+          <a href="http://mahsair.ir" target="_blank">
             Mahdesign
           </a>{" "}
           and is
