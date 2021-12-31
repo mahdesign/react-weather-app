@@ -17,9 +17,9 @@ export default function WeatherInfo(props) {
             <img
               src={props.data.iconUrl}
               alt="mostly-cloudly"
-              className="float-left"
+              className="float-start"
             />
-            <div className="float-left">
+            <div className="float-start">
               <span className="tempreture">
                 {Math.round(props.data.tempreture)}
               </span>
