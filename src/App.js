@@ -11,7 +11,7 @@ export default function App() {
           <a href="http://mahsair.ir" target="_blank">
             Mahdesign
           </a>{" "}
-          and is
+          and is{" "}
           <a
             href="https://github.com/mahdesign/react-weather-app"
             target="_blank"

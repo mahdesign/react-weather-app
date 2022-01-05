@@ -10,9 +10,9 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handelResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       tempreture: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -23,7 +23,7 @@ export default function Weather(props) {
     });
   }
   function search() {
-    const apiKey = "a710bd8bd76400c9658ef649d9e81728";
+    const apiKey = "d555add632bb01853aca6eb671d72fd7";
 
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -60,7 +60,7 @@ export default function Weather(props) {
             </div>
           </div>
           <WeatherInfo data={weatherData} />
-          <WeatherForcast />
+          <WeatherForcast coordinates={weatherData.coordinates} />
         </form>
       </div>
     );
